@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+}
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'MusticaPro';
+    src: url(./assets/fonts/MusticaPro-SemiBold.otf);
+}
+
+@font-face {
+    font-family: 'Belgiano';
+    src: url(./assets/fonts/Belgiano-Serif.otf);
+}
+
+/* Custom Colors */
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(225, 225, 225);
+        color: #134f5c;
+    }
+    header {
+        background-color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212f3c;
+        color: white;
+    }
+    header {
+        background-color: #2e4053;
+    }
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+#logo {
+    font-family: 'MusticaPro';
+    font-size: large;
+    user-select: none;
+}
+
+#menu {
+    user-select: none;
+    cursor: pointer;
+}
